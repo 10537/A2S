@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="job_courier" model="hr.job">
+          <field name="name">Courier</field>
+    </record>
+
+    <record model="ir.ui.view" id="view_a2_hr_employee_form">
+        <field name="name">view.hr.employee.a2.extend.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='calendar_id']" position="after">
+                <field name="type_of_employee" attrs="{'invisible': [('job_id', '!=', %(a2s_sale.job_courier)d)]}"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

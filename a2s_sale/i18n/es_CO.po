@@ -1,0 +1,207 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* a2s_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-19 16:59+0000\n"
+"PO-Revision-Date: 2017-11-19 16:59+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_client_earnings
+msgid "Client Earnings"
+msgstr "Pagar al Cliente"
+
+#. module: a2s_sale
+#: model:hr.job,name:a2s_sale.job_courier
+msgid "Courier"
+msgstr "Mensajero"
+
+#. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_courier_earnings
+msgid "Courier Earnings"
+msgstr "Ganancia mensajero"
+
+#. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_money_owner
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: a2s_sale
+#: model:ir.model,name:a2s_sale.model_product_template
+msgid "Customization of product template for A2"
+msgstr "Personalización de Productos para A2"
+
+#. module: a2s_sale
+#: selection:sale.order.line,line_state:0
+msgid "Delivering"
+msgstr "Entregando"
+
+#. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_employee_id
+#: model:ir.ui.view,arch_db:a2s_sale.view_a2_sales_order_line_filter
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: a2s_sale
+#: model:ir.model,name:a2s_sale.model_hr_employee
+msgid "Employee customization for A2"
+msgstr "Employee customization for A2"
+
+#. module: a2s_sale
+#: selection:hr.employee,type_of_employee:0
+msgid "External"
+msgstr "Externo"
+
+#. module: a2s_sale
+#: model:ir.ui.view,arch_db:a2s_sale.view_extend_product_template_form_view
+msgid "External Employee Cost"
+msgstr "Costo de Empleado Externo"
+
+#. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_product_product_external_earnings
+#: model:ir.model.fields,field_description:a2s_sale.field_product_template_external_earnings
+msgid "External earnings"
+msgstr "Ganacias Externo"
+
+#. module: a2s_sale
+#: model:ir.ui.view,arch_db:a2s_sale.view_a2_sales_order_line_filter
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: a2s_sale
+#: selection:hr.employee,type_of_employee:0
+msgid "Internal"
+msgstr "Interno"
+
+#. module: a2s_sale
+#: model:ir.ui.view,arch_db:a2s_sale.view_extend_product_template_form_view
+msgid "Internal Employee Cost"
+msgstr "Costo de Empleado interno"
+
+#. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_product_product_internal_earnings
+#: model:ir.model.fields,field_description:a2s_sale.field_product_template_internal_earnings
+msgid "Internal earnings"
+msgstr "Ganacias interno"
+
+#. module: a2s_sale
+#: selection:sale.order.line,line_state:0
+msgid "Liquidated"
+msgstr "Liquidado"
+
+#. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_money_release
+msgid "Money Release"
+msgstr "Dinero Entregado"
+
+#. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_money_withheld
+msgid "Money Withheld"
+msgstr "Dinero en mano"
+
+#. module: a2s_sale
+#: model:ir.ui.view,arch_db:a2s_sale.view_a2_sales_order_line_filter
+msgid "Money owner"
+msgstr "Propietario(Dinero)"
+
+#. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_own_earnings
+msgid "My Earnings"
+msgstr "Mis ganacias"
+
+#. module: a2s_sale
+#: model:ir.ui.view,arch_db:a2s_sale.view_a2_sales_order_line_filter
+msgid "My Sales Order Lines"
+msgstr "Mis lineas de pedidos de venta"
+
+#. module: a2s_sale
+#: model:ir.ui.view,arch_db:a2s_sale.view_a2_sales_order_line_filter
+msgid "Order"
+msgstr "Pedido"
+
+#. module: a2s_sale
+#: selection:sale.order.line,line_state:0
+msgid "Pending"
+msgstr "Pendiente"
+
+#. module: a2s_sale
+#: model:ir.ui.view,arch_db:a2s_sale.view_a2_sales_order_line_filter
+msgid "Product"
+msgstr "Producto"
+
+#. module: a2s_sale
+#: model:ir.actions.act_window,name:a2s_sale.action_a2_sale_order_line_list
+#: model:ir.ui.menu,name:a2s_sale.menu_earnings_report
+msgid "Sale Order Lines (Earnings)"
+msgstr "Tablero de Ventas y Ganancias"
+
+#. module: a2s_sale
+#: model:ir.model,name:a2s_sale.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: a2s_sale
+#: model:ir.model,name:a2s_sale.model_sale_order_line
+msgid "Sales Order Line customization for A2"
+msgstr "Personalizacion de las lineas de ventas para A2"
+
+#. module: a2s_sale
+#: model:ir.ui.view,arch_db:a2s_sale.view_a2_order_line_tree
+msgid "Sales Order Lines (Earnings)"
+msgstr "Tablero de Ventas y Ganancias"
+
+#. module: a2s_sale
+#: model:ir.ui.view,arch_db:a2s_sale.view_a2_sales_order_line_filter
+msgid "Sales Order Lines ready to be invoiced"
+msgstr "Líneas de pedidos de venta listas para facturar"
+
+#. module: a2s_sale
+#: model:ir.ui.view,arch_db:a2s_sale.view_a2_sales_order_line_filter
+msgid "Sales Order Lines related to a Sales Order of mine"
+msgstr "Líneas de pedidos de ventas relacionadas con un pedido de venta mío"
+
+#. module: a2s_sale
+#: model:ir.ui.view,arch_db:a2s_sale.view_a2_sales_order_line_filter
+msgid "Salesperson"
+msgstr "Comercial"
+
+#. module: a2s_sale
+#: model:ir.ui.view,arch_db:a2s_sale.view_a2_sales_order_line_filter
+msgid "Search Sales Order"
+msgstr "Buscar pedido de venta"
+
+#. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_service_date
+#: model:ir.ui.view,arch_db:a2s_sale.view_a2_sales_order_line_filter
+msgid "Service date"
+msgstr "Día de servicio"
+
+#. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_line_state
+msgid "State"
+msgstr "Estado"
+
+#. module: a2s_sale
+#: model:ir.ui.view,arch_db:a2s_sale.view_a2_sales_order_line_filter
+msgid "To Invoice"
+msgstr "A facturar"
+
+#. module: a2s_sale
+#: model:ir.ui.view,arch_db:a2s_sale.view_a2_order_line_tree
+msgid "Total"
+msgstr "Total"
+
+#. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_hr_employee_type_of_employee
+msgid "Type of employee"
+msgstr "Tipo de empleado"
+

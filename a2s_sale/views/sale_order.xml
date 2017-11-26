@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="view_sale_order_extend_form">
+        <field name="name">view.sale.order.a2.extend.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Add show_name field in Sale order line tree view-->
+            <xpath expr="//field[@name='order_line']/tree//field[@name='product_id']" position="before">
+                <field name="employee_id" domain="[('job_id', '=', %(a2s_sale.job_courier)d)]" required="1"/>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']/tree//field[@name='discount']" position="after">
+                <field name="money_withheld"/>
+                <field name="money_release"/>
+                <field name="money_owner"/>
+                <field name="client_earnings"/>
+                <field name="courier_earnings"/>
+                <field name="own_earnings"/>
+                <field name="line_state"/>
+            </xpath>
+
+
+            <xpath expr="//field[@name='order_line']" position="attributes">
+                <attribute name="context">{'default_money_owner': partner_id}</attribute>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record id="view_a2_order_line_tree" model="ir.ui.view">
+            <field name="name">sale.order.line.tree</field>
+            <field name="model">sale.order.line</field>
+            <field name="arch" type="xml">
+                <tree string="Sales Order Lines (Earnings)" create="false" editable="top"
+                      colors="green:line_state == 'liquidated';blue:line_state == 'delivering';red:line_state == 'pending'">
+                    <field name="service_date"/>
+                    <field name="employee_id" domain="[('job_id', '=', %(a2s_sale.job_courier)d)]" required="1"/>
+                    <field name="product_id" invisible="1"/>
+                    <field name="order_id"/>
+                    <field name="order_partner_id"/>
+                    <field name="name"/>
+                    <field name="money_withheld" sum="Total" widget="monetary"/>
+                    <field name="money_release" sum="Total" widget="monetary"/>
+                    <field name="money_owner" />
+                    <field name="client_earnings" sum="Total" widget="monetary"/>
+                    <field name="courier_earnings" sum="Total" widget="monetary"/>
+                    <field name="own_earnings" sum="Total" widget="monetary"/>
+                    <field name="price_subtotal" sum="Total" widget="monetary" readonly="1"/>
+                    <field name="line_state"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="view_a2_sales_order_line_filter" model="ir.ui.view">
+            <field name="name">sale.order.line.select.a2</field>
+            <field name="model">sale.order.line</field>
+            <field name="arch" type="xml">
+                <search string="Search Sales Order">
+                    <filter string="To Invoice" domain="[('qty_to_invoice','&lt;&gt;', 0)]"  help="Sales Order Lines ready to be invoiced"/>
+                    <separator/>
+                    <filter string="My Sales Order Lines" domain="[('salesman_id','=',uid)]" help="Sales Order Lines related to a Sales Order of mine"/>
+                    <field name="order_id"/>
+                    <field name="order_partner_id" operator="child_of"/>
+                    <field name="product_id"/>
+                    <field name="salesman_id"/>
+                    <field name="employee_id"/>
+                    <field name="money_owner"/>
+                    <field name="service_date"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Product" domain="[]" context="{'group_by':'product_id'}"/>
+                        <filter string="Order" domain="[]" context="{'group_by':'order_id'}"/>
+                        <filter string="Employee" domain="[]" context="{'group_by':'employee_id'}"/>
+                        <filter string="Money owner" domain="[]" context="{'group_by':'money_owner'}"/>
+                        <filter string="Salesperson" domain="[]" context="{'group_by':'salesman_id'}"/>
+                        <filter string="Service date" domain="[]" context="{'group_by':'service_date:day'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_a2_sale_order_line_list" model="ir.actions.act_window">
+            <field name="name">Sale Order Lines (Earnings)</field>
+            <field name="res_model">sale.order.line</field>
+            <field name="domain">[('state', 'in', ['sale', 'done'])]</field>
+            <field name="view_id" ref="view_a2_order_line_tree"/>
+            <field name="search_view_id" ref="view_a2_sales_order_line_filter"/>
+        </record>
+
+
+    <menuitem id="menu_earnings_report" action="action_a2_sale_order_line_list"
+              parent="sales_team.menu_sales"
+              groups="sales_team.group_sale_manager,sales_team.group_sale_salesman"
+              sequence="99"/>
+
+</odoo>
+
