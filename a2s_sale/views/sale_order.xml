@@ -9,6 +9,8 @@
 
             <!-- Add show_name field in Sale order line tree view-->
             <xpath expr="//field[@name='order_line']/tree//field[@name='product_id']" position="before">
+                <field name="quick_payment" />
+                <field name="service_date" required="1"/>
                 <field name="employee_id" domain="[('job_id', '=', %(a2s_sale.job_courier)d)]" required="1"/>
             </xpath>
 
@@ -36,20 +38,23 @@
             <field name="arch" type="xml">
                 <tree string="Sales Order Lines (Earnings)" create="false" editable="top"
                       colors="green:line_state == 'liquidated';blue:line_state == 'delivering';red:line_state == 'pending'">
-                    <field name="service_date"/>
-                    <field name="employee_id" domain="[('job_id', '=', %(a2s_sale.job_courier)d)]" required="1"/>
-                    <field name="product_id" invisible="1"/>
-                    <field name="order_id"/>
-                    <field name="order_partner_id"/>
-                    <field name="name"/>
-                    <field name="money_withheld" sum="Total" widget="monetary"/>
-                    <field name="money_release" sum="Total" widget="monetary"/>
-                    <field name="money_owner" />
-                    <field name="client_earnings" sum="Total" widget="monetary"/>
-                    <field name="courier_earnings" sum="Total" widget="monetary"/>
-                    <field name="own_earnings" sum="Total" widget="monetary"/>
-                    <field name="price_subtotal" sum="Total" widget="monetary" readonly="1"/>
-                    <field name="line_state"/>
+                    <field name="quick_payment" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="service_date" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}" />
+                    <field name="employee_id" domain="[('job_id', '=', %(a2s_sale.job_courier)d)]" required="1" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="product_id" invisible="1" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="order_id" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="order_partner_id" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="name" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="money_withheld" sum="Total" widget="monetary" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="money_release" sum="Total" widget="monetary" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="money_owner" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="client_earnings" sum="Total" widget="monetary" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="courier_earnings" sum="Total" widget="monetary" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="own_earnings" sum="Total" widget="monetary" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="price_subtotal" sum="Total" widget="monetary" readonly="1" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="line_state" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="invoice_status" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="state" invisible="1" />
                 </tree>
             </field>
         </record>
@@ -76,7 +81,7 @@
                         <filter string="Employee" domain="[]" context="{'group_by':'employee_id'}"/>
                         <filter string="Money owner" domain="[]" context="{'group_by':'money_owner'}"/>
                         <filter string="Salesperson" domain="[]" context="{'group_by':'salesman_id'}"/>
-                        <filter string="Service date" domain="[]" context="{'group_by':'service_date:day'}"/>
+                        <filter string="Service date" domain="[]" context="{'group_by':'service_date'}"/>
                     </group>
                 </search>
             </field>
@@ -85,7 +90,7 @@
         <record id="action_a2_sale_order_line_list" model="ir.actions.act_window">
             <field name="name">Sale Order Lines (Earnings)</field>
             <field name="res_model">sale.order.line</field>
-            <field name="domain">[('state', 'in', ['sale', 'done'])]</field>
+            <field name="domain">[('state', 'in', ['draft','sent', 'sale', 'done'])]</field>
             <field name="view_id" ref="view_a2_order_line_tree"/>
             <field name="search_view_id" ref="view_a2_sales_order_line_filter"/>
         </record>
@@ -97,4 +102,3 @@
               sequence="99"/>
 
 </odoo>
-

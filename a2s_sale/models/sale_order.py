@@ -6,10 +6,12 @@ from datetime import datetime, timedelta
 from odoo import api, fields, models
 
 
-class SaleOrder(models.Model):
+class SaleOrderLine(models.Model):
     _inherit = 'sale.order.line'
     _description = "Sales Order Line customization for A2"
+    _order = 'service_date desc'
 
+    quick_payment = fields.Boolean(string="Quick Payment", default=True)
     service_date = fields.Date('Service date', default=fields.Date.today())
     employee_id = fields.Many2one('hr.employee', string="Employee")
     money_withheld = fields.Float(string="Money Withheld", default=0.0)
@@ -22,7 +24,7 @@ class SaleOrder(models.Model):
                                              ('delivering', 'Delivering')], string="State", default='delivering')
 
     @api.multi
-    @api.depends('money_withheld', 'money_release')
+    @api.depends('money_withheld', 'money_release', 'quick_payment')
     def _earnings(self):
         """
         Update the compute field own_earnings checking if the money have a owner different to the Odoo Company
@@ -35,10 +37,13 @@ class SaleOrder(models.Model):
 
             if record.employee_id:
                 courier_earnings = type_earning[record.employee_id.type_of_employee] or 0.0
-                record.courier_earnings = courier_earnings
+                record.courier_earnings = courier_earnings if courier_earnings > 0.00 else 0.00
 
             if record.money_owner:
-                money = (record.money_withheld - record.price_subtotal) or 0.0
-                record.client_earnings = money
+                if not record.quick_payment:
+                    record.client_earnings = record.money_withheld or 0.00
+                else:
+                    money = (record.money_withheld - record.price_subtotal) or 0.0
+                    record.client_earnings = money if money > 0.00 else 0.00
 
             record.own_earnings = (record.price_subtotal - courier_earnings) or 0.0
