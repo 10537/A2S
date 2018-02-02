@@ -10,11 +10,13 @@
     'description': """
 Sales Workflow 
 ==============
-Adds new files to the SO for support the sale process on A2 company, this module add the following fields:
+Adds new files to the SO for support the sale process on A2 company,
+this module add the following fields:
 
 On Sale Order Line:
 * Employee
-* Money Withheld (When the courier get the money for a delivered or for a product payment)
+* Money Withheld (When the courier get the money for a delivered or
+for a product payment)
 * Money Release (When the courier delivery the money in A2 company)
 * Owner (Is the owner of the money that the courier receives)
  
