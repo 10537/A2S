@@ -6,17 +6,25 @@
         <field name="inherit_id" ref="product.product_template_only_form_view"/>
         <field name="arch" type="xml">
 
-            <label for="standard_price" position="after">
-                <label for="external_earnings"
-                       string="External Employee Cost">
-                    <field name="external_earnings" string="External Employee Cost"/>
-                </label>
-                <label for="internal_earnings"
-                       string="Internal Employee Cost">
-                    <field name="internal_earnings" string="Internal Employee Cost"/>
-                </label>
+            <page name="general_information" position="after">
+                <page string="Employee's Cost" name="employee_cost">
+                    <group>
+                        <group name="group_employee_cost">
+                            <label for="external_earnings"
+                                   string="External Cost"/>
+                                <div name="external_earnings" groups="base.group_user">
+                                    <field name="external_earnings" widget='monetary' options="{'currency_field': 'currency_id'}" class="oe_inline"/>
+                                </div>
+                            <label for="internal_earnings"
+                                   string="Internal Cost"/>
+                                <div name="internal_earnings" groups="base.group_user">
+                                    <field name="internal_earnings" widget='monetary' options="{'currency_field': 'currency_id'}" class="oe_inline"/>
+                                </div>
+                        </group>
+                    </group>
+                </page>
+            </page>
 
-            </label>
         </field>
     </record>
 </odoo>
