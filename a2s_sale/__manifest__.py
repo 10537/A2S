@@ -28,6 +28,7 @@ for a product payment)
         'views/product.xml',
         'views/partner.xml',
         'views/sale_order.xml',
+        'views/report_invoice.xml',
     ],
     'installable': True,
     'auto_install': False,

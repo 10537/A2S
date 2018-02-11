@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e82d20d-4d77-4553-9ea9-566424d99de7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/a2s_sale/views/product.xml" afterPath="$PROJECT_DIR$/a2s_sale/views/product.xml" />
+      <change beforePath="$PROJECT_DIR$/a2s_sale/__manifest__.py" afterPath="$PROJECT_DIR$/a2s_sale/__manifest__.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,16 +23,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sale_order.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a2s_sale/views/sale_order.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="83" column="100" lean-forward="false" selection-start-line="83" selection-start-column="88" selection-end-line="83" selection-end-column="100" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="partner.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a2s_sale/views/partner.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -44,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a2s_sale/views/product.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -67,11 +56,51 @@
       <file leaf-file-name="sale_order.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a2s_sale/models/sale_order.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="17" />
+            <state relative-caret-position="126">
+              <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="40" />
               <folding>
                 <element signature="e#99#128#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="report_invoice.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/a2s_sale/views/report_invoice.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="76" column="47" lean-forward="false" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__manifest__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/a2s_sale/__manifest__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout_templates.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/report/views/layout_templates.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="150" column="11" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="150" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="report_invoice.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/account/views/report_invoice.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,24 +115,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a2s_sale/models/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="e#100#124#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>&quot;vat&quot;</find>
       <find>product_template_form_view</find>
+      <find>invoice</find>
+      <find>report_invoice_document</find>
+      <find>external_layout</find>
     </findStrings>
     <dirStrings>
       <dir>$USER_HOME$/odoo-10.0e</dir>
@@ -118,11 +138,12 @@
         <option value="$PROJECT_DIR$/a2s_sale/models/hr_employee.py" />
         <option value="$PROJECT_DIR$/a2s_sale/models/__init__.py" />
         <option value="$PROJECT_DIR$/a2s_sale/i18n/es_CO.po" />
-        <option value="$PROJECT_DIR$/a2s_sale/__manifest__.py" />
         <option value="$PROJECT_DIR$/a2s_sale/views/sale_order.xml" />
         <option value="$PROJECT_DIR$/a2s_sale/views/partner.xml" />
         <option value="$PROJECT_DIR$/a2s_sale/models/sale_order.py" />
         <option value="$PROJECT_DIR$/a2s_sale/views/product.xml" />
+        <option value="$PROJECT_DIR$/a2s_sale/__manifest__.py" />
+        <option value="$PROJECT_DIR$/a2s_sale/views/report_invoice.xml" />
       </list>
     </option>
   </component>
@@ -293,14 +314,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a2s_sale/__manifest__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a2s_sale/models/res_partner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -333,16 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a2s_sale/models/sale_order.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="17" />
-          <folding>
-            <element signature="e#99#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a2s_sale/models/hr_employee.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -371,6 +374,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a2s_sale/models/sale_order.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="40" />
+          <folding>
+            <element signature="e#99#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/account/views/report_invoice.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/report/views/layout_templates.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="150" column="11" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="150" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a2s_sale/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a2s_sale/views/report_invoice.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="76" column="47" lean-forward="false" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
           <folding />
         </state>
       </provider>
