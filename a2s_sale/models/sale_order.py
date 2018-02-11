@@ -30,7 +30,8 @@ class SaleOrderLine(models.Model):
                                   string="State", default='delivering')
 
     @api.multi
-    @api.depends('money_withheld', 'money_release', 'quick_payment')
+    @api.depends('money_withheld', 'money_release', 'quick_payment',
+                 'discount', 'product_id')
     def _earnings(self):
         """
         Update the compute field own_earnings checking if the money have a

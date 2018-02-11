@@ -6,11 +6,17 @@
         <field name="inherit_id" ref="product.product_template_only_form_view"/>
         <field name="arch" type="xml">
 
-            <xpath expr="//field[@name='standard_price']" position="after">
-                <field name="external_earnings" string="External Employee Cost"/>
-                <field name="internal_earnings" string="Internal Employee Cost"/>
-            </xpath>
+            <label for="standard_price" position="after">
+                <label for="external_earnings"
+                       string="External Employee Cost">
+                    <field name="external_earnings" string="External Employee Cost"/>
+                </label>
+                <label for="internal_earnings"
+                       string="Internal Employee Cost">
+                    <field name="internal_earnings" string="Internal Employee Cost"/>
+                </label>
 
+            </label>
         </field>
     </record>
 </odoo>
