@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="account.view_partner_property_form"/>
         <field name="arch" type="xml">
             <label for="street" position="before">
-                <label for="vat" string="RUT/CC/CE/NIT"/>
+                <label for="vat" string="CC/NIT"/>
                 <div name="vat_info" class="o_row">
                     <field name="vat" placeholder="e.g. BE0477472701" />
                 </div>
