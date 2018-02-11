@@ -32,8 +32,8 @@ msgstr "Ganancia mensajero"
 
 #. module: a2s_sale
 #: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_money_owner
-msgid "Customer"
-msgstr "Cliente"
+msgid "Money Owner"
+msgstr "Propietario del Dinero"
 
 #. module: a2s_sale
 #: model:ir.model,name:a2s_sale.model_product_template

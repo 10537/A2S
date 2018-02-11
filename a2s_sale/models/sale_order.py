@@ -12,11 +12,12 @@ class SaleOrderLine(models.Model):
     _order = 'service_date desc'
 
     quick_payment = fields.Boolean(string="Quick Payment", default=True)
-    service_date = fields.Date('Service date', default=fields.Date.today())
+    service_date = fields.Date(
+        'Service date', default=lambda *a: datetime.now().strftime('%Y-%m-%d'))
     employee_id = fields.Many2one('hr.employee', string="Employee")
     money_withheld = fields.Float(string="Money Withheld", default=0.0)
     money_release = fields.Float(string="Money Release", default=0.0)
-    money_owner = fields.Many2one('res.partner', string="Customer")
+    money_owner = fields.Many2one('res.partner', string="Money Owner")
     client_earnings = fields.Float(string="Client Earnings",
                                    compute='_earnings', store=True)
     courier_earnings = fields.Float(string="Courier Earnings",
