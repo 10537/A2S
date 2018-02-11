@@ -41,9 +41,9 @@
                     <field name="quick_payment" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
                     <field name="service_date" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}" />
                     <field name="employee_id" domain="[('job_id', '=', %(a2s_sale.job_courier)d)]" required="1" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
-                    <field name="product_id" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
                     <field name="order_id" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
                     <field name="order_partner_id" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="product_id" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
                     <field name="name" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
                     <field name="money_withheld" sum="Total" widget="monetary" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
                     <field name="money_release" sum="Total" widget="monetary" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
