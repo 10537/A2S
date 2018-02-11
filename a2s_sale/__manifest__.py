@@ -26,6 +26,7 @@ for a product payment)
     'data': [
         'views/hr.xml',
         'views/product.xml',
+        'views/partner.xml',
         'views/sale_order.xml',
     ],
     'installable': True,
