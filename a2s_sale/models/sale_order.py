@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
-from itertools import groupby
-from datetime import datetime, timedelta
-
+from datetime import datetime
 from odoo import api, fields, models
 
 
@@ -59,3 +57,20 @@ class SaleOrderLine(models.Model):
                     record.client_earnings = money if money > 0.00 else 0.00
             amount = (record.price_subtotal - courier_earnings) or 0.00
             record.own_earnings = amount
+
+    @api.multi
+    def _prepare_invoice_line(self, qty):
+        res = super(SaleOrderLine, self)._prepare_invoice_line(qty)
+        new_fields = {
+            'quick_payment': self.quick_payment,
+            'service_date': self.service_date,
+            'employee_id': self.employee_id,
+            'money_withheld': self.money_withheld,
+            'money_release': self.money_release,
+            'money_owner': self.money_owner,
+            'client_earnings': self.client_earnings,
+            'courier_earnings': self.courier_earnings,
+            'own_earnings': self.own_earnings,
+            'line_state': self.line_state,
+        }
+        return res.update(new_fields)

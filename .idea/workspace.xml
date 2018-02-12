@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e82d20d-4d77-4553-9ea9-566424d99de7" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/a2s_sale/models/account_invoice.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/a2s_sale/i18n/es_CO.po" afterPath="$PROJECT_DIR$/a2s_sale/i18n/es_CO.po" />
+      <change beforePath="$PROJECT_DIR$/a2s_sale/models/__init__.py" afterPath="$PROJECT_DIR$/a2s_sale/models/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/a2s_sale/models/sale_order.py" afterPath="$PROJECT_DIR$/a2s_sale/models/sale_order.py" />
       <change beforePath="$PROJECT_DIR$/a2s_sale/views/report_invoice.xml" afterPath="$PROJECT_DIR$/a2s_sale/views/report_invoice.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,31 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="product.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a2s_sale/models/product.py">
+      <file leaf-file-name="hr_employee.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/a2s_sale/models/hr_employee.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a2s_sale/views/product.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product_views.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/product/views/product_views.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="59" column="40" lean-forward="true" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -46,8 +31,8 @@
       <file leaf-file-name="sale_order.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a2s_sale/models/sale_order.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="40" />
+            <state relative-caret-position="180">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="e#99#128#0" expanded="true" />
               </folding>
@@ -55,62 +40,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="report_invoice.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/a2s_sale/views/report_invoice.xml">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/a2s_sale/models/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#100#124#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ir_qweb.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/base/ir/ir_qweb.xml">
+      <file leaf-file-name="account_invoice.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/a2s_sale/models/account_invoice.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ir_qweb.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/base/ir/ir_qweb/ir_qweb.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__manifest__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a2s_sale/__manifest__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout_templates.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/report/views/layout_templates.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="150" column="11" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="150" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="150">
+              <caret line="58" column="73" lean-forward="false" selection-start-line="58" selection-start-column="73" selection-end-line="58" selection-end-column="73" />
+              <folding>
+                <element signature="e#99#138#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="report_invoice.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/account/views/report_invoice.xml">
+        <entry file="file://$PROJECT_DIR$/a2s_sale/views/report_invoice.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            <state relative-caret-position="321">
+              <caret line="249" column="72" lean-forward="false" selection-start-line="249" selection-start-column="72" selection-end-line="249" selection-end-column="72" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account_invoice.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/account/models/account_invoice.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2760">
+              <caret line="184" column="35" lean-forward="false" selection-start-line="184" selection-start-column="35" selection-end-line="184" selection-end-column="51" />
+              <folding>
+                <element signature="e#25#36#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,10 +97,20 @@
       <find>external_layout</find>
       <find>&quot;contact&quot;</find>
       <find>fields</find>
+      <find>create_invoice_line</find>
+      <find>_invoice_line</find>
+      <find>name=&quot;payment&quot;</find>
+      <find>widget=&quot;payment&quot;</find>
+      <find>_get_payment_info_JSON</find>
+      <find>payments_widget</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
     <dirStrings>
-      <dir>$USER_HOME$/odoo-10.0e</dir>
       <dir>$USER_HOME$/odoo-10.0e/odoo/addons/base</dir>
+      <dir>$USER_HOME$/odoo-10.0e/odoo/addons/account</dir>
+      <dir>$USER_HOME$/odoo-10.0e</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -139,14 +120,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/a2s_sale/models/hr_employee.py" />
-        <option value="$PROJECT_DIR$/a2s_sale/models/__init__.py" />
         <option value="$PROJECT_DIR$/a2s_sale/i18n/es_CO.po" />
         <option value="$PROJECT_DIR$/a2s_sale/views/sale_order.xml" />
         <option value="$PROJECT_DIR$/a2s_sale/views/partner.xml" />
-        <option value="$PROJECT_DIR$/a2s_sale/models/sale_order.py" />
         <option value="$PROJECT_DIR$/a2s_sale/views/product.xml" />
         <option value="$PROJECT_DIR$/a2s_sale/__manifest__.py" />
+        <option value="$PROJECT_DIR$/a2s_sale/models/sale_order.py" />
+        <option value="$PROJECT_DIR$/a2s_sale/models/__init__.py" />
         <option value="$PROJECT_DIR$/a2s_sale/views/report_invoice.xml" />
+        <option value="$PROJECT_DIR$/a2s_sale/models/account_invoice.py" />
       </list>
     </option>
   </component>
@@ -194,51 +176,6 @@
             <path>
               <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
               <item name="odoo-10" type="9c53a853:ProjectViewModuleGroupNode" />
-            </path>
-            <path>
-              <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
-              <item name="odoo-10" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="odoo-10.0e" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
-              <item name="odoo-10" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="odoo-10.0e" type="462c0819:PsiDirectoryNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
-              <item name="odoo-10" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="odoo-10.0e" type="462c0819:PsiDirectoryNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
-              <item name="odoo-10" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="odoo-10.0e" type="462c0819:PsiDirectoryNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
-              <item name="odoo-10" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="odoo-10.0e" type="462c0819:PsiDirectoryNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="ir" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
-              <item name="odoo-10" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="odoo-10.0e" type="462c0819:PsiDirectoryNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="ir" type="462c0819:PsiDirectoryNode" />
-              <item name="ir_qweb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
@@ -344,20 +281,18 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/odoo-10.0e/odoo/addons/sale/models/sale.py</url>
+          <line>3</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/a2s_sale/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#100#124#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a2s_sale/views/hr.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -398,14 +333,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a2s_sale/models/hr_employee.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a2s_sale/models/product.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -430,16 +357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a2s_sale/models/sale_order.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="40" />
-          <folding>
-            <element signature="e#99#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/account/views/report_invoice.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -452,6 +369,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
           <caret line="150" column="11" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="150" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/point_of_sale/models/pos_order.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="189" column="33" lean-forward="true" selection-start-line="189" selection-start-column="33" selection-end-line="189" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/sale/models/sale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-201">
+          <caret line="794" column="16" lean-forward="false" selection-start-line="794" selection-start-column="16" selection-end-line="794" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a2s_sale/models/hr_employee.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/website_sale/views/templates.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="1277" column="27" lean-forward="false" selection-start-line="1277" selection-start-column="27" selection-end-line="1277" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -480,11 +429,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/a2s_sale/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#100#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/account/models/account_invoice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2760">
+          <caret line="184" column="35" lean-forward="false" selection-start-line="184" selection-start-column="35" selection-end-line="184" selection-end-column="51" />
+          <folding>
+            <element signature="e#25#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/a2s_sale/views/report_invoice.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        <state relative-caret-position="321">
+          <caret line="249" column="72" lean-forward="false" selection-start-line="249" selection-start-column="72" selection-end-line="249" selection-end-column="72" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a2s_sale/models/sale_order.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#99#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a2s_sale/models/account_invoice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="58" column="73" lean-forward="false" selection-start-line="58" selection-start-column="73" selection-end-line="58" selection-end-column="73" />
+          <folding>
+            <element signature="e#99#138#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

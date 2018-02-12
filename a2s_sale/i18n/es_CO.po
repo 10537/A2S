@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-28 22:42+0000\n"
-"PO-Revision-Date: 2018-01-28 22:42+0000\n"
+"POT-Creation-Date: 2018-02-12 03:31+0000\n"
+"PO-Revision-Date: 2018-02-12 03:31+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,15 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: a2s_sale
+#: code:addons/a2s_sale/models/account_invoice.py:55
+#, python-format
+msgid "%s Payment with ref %s - %s via %s by %s %s\n"
+""
+msgstr "%s Pago con Referencia %s - %s vía %s por %s %s\n"
+""
+
+#. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_account_invoice_line_client_earnings
 #: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_client_earnings
 msgid "Client Earnings"
 msgstr "Pagar al Cliente"
@@ -26,14 +35,10 @@ msgid "Courier"
 msgstr "Mensajero"
 
 #. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_account_invoice_line_courier_earnings
 #: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_courier_earnings
 msgid "Courier Earnings"
 msgstr "Ganancia mensajero"
-
-#. module: a2s_sale
-#: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_money_owner
-msgid "Money Owner"
-msgstr "Propietario del Dinero"
 
 #. module: a2s_sale
 #: model:ir.model,name:a2s_sale.model_product_template
@@ -41,11 +46,13 @@ msgid "Customization of product template for A2"
 msgstr "Customization of product template for A2"
 
 #. module: a2s_sale
+#: selection:account.invoice.line,line_state:0
 #: selection:sale.order.line,line_state:0
 msgid "Delivering"
 msgstr "Entregando"
 
 #. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_account_invoice_line_employee_id
 #: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_employee_id
 #: model:ir.ui.view,arch_db:a2s_sale.view_a2_sales_order_line_filter
 msgid "Employee"
@@ -57,14 +64,19 @@ msgid "Employee customization for A2"
 msgstr "Employee customization for A2"
 
 #. module: a2s_sale
+#: model:ir.ui.view,arch_db:a2s_sale.view_extend_product_template_form_view
+msgid "Employee's Cost"
+msgstr "Costos por Empleados"
+
+#. module: a2s_sale
 #: selection:hr.employee,type_of_employee:0
 msgid "External"
 msgstr "Externo"
 
 #. module: a2s_sale
 #: model:ir.ui.view,arch_db:a2s_sale.view_extend_product_template_form_view
-msgid "External Employee Cost"
-msgstr "Costo de Empleado Externo"
+msgid "External Cost"
+msgstr "Costo Externos"
 
 #. module: a2s_sale
 #: model:ir.model.fields,field_description:a2s_sale.field_product_product_external_earnings
@@ -84,8 +96,8 @@ msgstr "Interno"
 
 #. module: a2s_sale
 #: model:ir.ui.view,arch_db:a2s_sale.view_extend_product_template_form_view
-msgid "Internal Employee Cost"
-msgstr "Costo de Empleado interno"
+msgid "Internal Cost"
+msgstr "Costo internos"
 
 #. module: a2s_sale
 #: model:ir.model.fields,field_description:a2s_sale.field_product_product_internal_earnings
@@ -94,16 +106,41 @@ msgid "Internal earnings"
 msgstr "Ganacias interno"
 
 #. module: a2s_sale
+#: model:ir.model,name:a2s_sale.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: a2s_sale
+#: model:ir.model,name:a2s_sale.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Linea de Factura"
+
+#. module: a2s_sale
+#: code:addons/a2s_sale/models/account_invoice.py:16
+#, python-format
+msgid "Less Payment"
+msgstr "Menos pago"
+
+#. module: a2s_sale
+#: selection:account.invoice.line,line_state:0
 #: selection:sale.order.line,line_state:0
 msgid "Liquidated"
 msgstr "Liquidado"
 
 #. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_account_invoice_line_money_owner
+#: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_money_owner
+msgid "Money Owner"
+msgstr "Propietario del Dinero"
+
+#. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_account_invoice_line_money_release
 #: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_money_release
 msgid "Money Release"
 msgstr "Dinero Entregado"
 
 #. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_account_invoice_line_money_withheld
 #: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_money_withheld
 msgid "Money Withheld"
 msgstr "Dinero en mano"
@@ -114,6 +151,7 @@ msgid "Money owner"
 msgstr "Propietario(Dinero)"
 
 #. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_account_invoice_line_own_earnings
 #: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_own_earnings
 msgid "My Earnings"
 msgstr "Mis ganacias"
@@ -134,6 +172,7 @@ msgid "Partner"
 msgstr "Empresa"
 
 #. module: a2s_sale
+#: selection:account.invoice.line,line_state:0
 #: selection:sale.order.line,line_state:0
 msgid "Pending"
 msgstr "Pendiente"
@@ -144,6 +183,7 @@ msgid "Product"
 msgstr "Producto"
 
 #. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_account_invoice_line_quick_payment
 #: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_quick_payment
 msgid "Quick Payment"
 msgstr "Pago Inmediato"
@@ -153,11 +193,6 @@ msgstr "Pago Inmediato"
 #: model:ir.ui.menu,name:a2s_sale.menu_earnings_report
 msgid "Sale Order Lines (Earnings)"
 msgstr "Tablero de Ventas y Ganancias"
-
-#. module: a2s_sale
-#: model:ir.model,name:a2s_sale.model_sale_order
-msgid "Sales Order"
-msgstr "Pedido de venta"
 
 #. module: a2s_sale
 #: model:ir.model,name:a2s_sale.model_sale_order_line
@@ -190,12 +225,14 @@ msgid "Search Sales Order"
 msgstr "Buscar pedido de venta"
 
 #. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_account_invoice_line_service_date
 #: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_service_date
 #: model:ir.ui.view,arch_db:a2s_sale.view_a2_sales_order_line_filter
 msgid "Service date"
 msgstr "Día de servicio"
 
 #. module: a2s_sale
+#: model:ir.model.fields,field_description:a2s_sale.field_account_invoice_line_line_state
 #: model:ir.model.fields,field_description:a2s_sale.field_sale_order_line_line_state
 msgid "State"
 msgstr "Estado"

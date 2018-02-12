@@ -5,3 +5,4 @@ from . import sale_order
 from . import hr_employee
 from . import product
 from . import res_partner
+from . import account_invoice
