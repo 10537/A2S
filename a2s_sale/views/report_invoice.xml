@@ -19,7 +19,7 @@
                     </t>
                 </div>
                 <div t-if="'vat' in fields">
-                    <span>NIF: <span itemprop="vat" t-esc="object.vat"/></span>
+                    <span>CC/NIT: <span itemprop="vat" t-esc="object.vat"/></span>
                 </div>
                 <div itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress">
                     <div t-if="address and 'address' in fields">
