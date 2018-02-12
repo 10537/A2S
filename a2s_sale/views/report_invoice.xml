@@ -21,8 +21,9 @@
                 <div t-if="'vat' in fields">
                     <span>CC/NIT: <span itemprop="vat" t-esc="object.vat"/></span>
                 </div>
-                <div>
-                    <span>Regimen Simplificado</span>
+                <div t-if="object.property_account_position_id">
+                    <span itemprop="property_account_position_id"
+                          t-esc="object.property_account_position_id.name"/>
                 </div>
                 <div itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress">
                     <div t-if="address and 'address' in fields">
