@@ -23,16 +23,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="partner.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a2s_sale/views/partner.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="product.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a2s_sale/views/product.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,8 +58,28 @@
       <file leaf-file-name="report_invoice.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/a2s_sale/views/report_invoice.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="128" lean-forward="false" selection-start-line="20" selection-start-column="128" selection-end-line="20" selection-end-column="128" />
+            <state relative-caret-position="225">
+              <caret line="21" column="66" lean-forward="false" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ir_qweb.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/base/ir/ir_qweb.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ir_qweb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/base/ir/ir_qweb/ir_qweb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,16 +115,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hr_employee.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a2s_sale/models/hr_employee.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -124,9 +124,12 @@
       <find>invoice</find>
       <find>report_invoice_document</find>
       <find>external_layout</find>
+      <find>&quot;contact&quot;</find>
+      <find>fields</find>
     </findStrings>
     <dirStrings>
       <dir>$USER_HOME$/odoo-10.0e</dir>
+      <dir>$USER_HOME$/odoo-10.0e/odoo/addons/base</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -188,6 +191,55 @@
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo-10" type="9c53a853:ProjectViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo-10" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="odoo-10.0e" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo-10" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="odoo-10.0e" type="462c0819:PsiDirectoryNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo-10" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="odoo-10.0e" type="462c0819:PsiDirectoryNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo-10" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="odoo-10.0e" type="462c0819:PsiDirectoryNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo-10" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="odoo-10.0e" type="462c0819:PsiDirectoryNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="ir" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
+              <item name="odoo-10" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="odoo-10.0e" type="462c0819:PsiDirectoryNode" />
+              <item name="odoo" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="ir" type="462c0819:PsiDirectoryNode" />
+              <item name="ir_qweb" type="462c0819:PsiDirectoryNode" />
+            </path>
             <path>
               <item name="A2S" type="b2602c69:ProjectViewProjectNode" />
               <item name="A2S" type="462c0819:PsiDirectoryNode" />
@@ -301,7 +353,7 @@
         <state relative-caret-position="60">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#100#124#0" expanded="true" />
+            <element signature="e#100#124#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -412,10 +464,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/base/ir/ir_qweb/ir_qweb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/odoo-10.0e/odoo/addons/base/ir/ir_qweb.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/a2s_sale/views/report_invoice.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="128" lean-forward="false" selection-start-line="20" selection-start-column="128" selection-end-line="20" selection-end-column="128" />
+        <state relative-caret-position="225">
+          <caret line="21" column="66" lean-forward="false" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
           <folding />
         </state>
       </provider>
