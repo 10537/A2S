@@ -247,8 +247,7 @@
                                     <td></td>
                                 </tr>
                                 <tr class="border-black">
-                                    <td class="text-justify" colspan="12"
-                                        style="font-size:9">
+                                    <td class="text-justify" colspan="12">
                                         <t t-esc="o._get_payment_info_report()[0]"/>
                                     </td>
                                 </tr>

@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e82d20d-4d77-4553-9ea9-566424d99de7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/a2s_sale/models/account_invoice.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/a2s_sale/i18n/es_CO.po" afterPath="$PROJECT_DIR$/a2s_sale/i18n/es_CO.po" />
-      <change beforePath="$PROJECT_DIR$/a2s_sale/models/__init__.py" afterPath="$PROJECT_DIR$/a2s_sale/models/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/a2s_sale/models/sale_order.py" afterPath="$PROJECT_DIR$/a2s_sale/models/sale_order.py" />
       <change beforePath="$PROJECT_DIR$/a2s_sale/views/report_invoice.xml" afterPath="$PROJECT_DIR$/a2s_sale/views/report_invoice.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="account_invoice.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="account_invoice.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a2s_sale/models/account_invoice.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -64,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="report_invoice.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="report_invoice.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/a2s_sale/views/report_invoice.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="249" column="72" lean-forward="false" selection-start-line="249" selection-start-column="72" selection-end-line="249" selection-end-column="72" />
+            <state relative-caret-position="456">
+              <caret line="258" column="41" lean-forward="true" selection-start-line="258" selection-start-column="41" selection-end-line="258" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -127,8 +122,8 @@
         <option value="$PROJECT_DIR$/a2s_sale/__manifest__.py" />
         <option value="$PROJECT_DIR$/a2s_sale/models/sale_order.py" />
         <option value="$PROJECT_DIR$/a2s_sale/models/__init__.py" />
-        <option value="$PROJECT_DIR$/a2s_sale/views/report_invoice.xml" />
         <option value="$PROJECT_DIR$/a2s_sale/models/account_invoice.py" />
+        <option value="$PROJECT_DIR$/a2s_sale/views/report_invoice.xml" />
       </list>
     </option>
   </component>
@@ -449,14 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a2s_sale/views/report_invoice.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="249" column="72" lean-forward="false" selection-start-line="249" selection-start-column="72" selection-end-line="249" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a2s_sale/models/sale_order.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -474,6 +461,14 @@
           <folding>
             <element signature="e#99#138#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a2s_sale/views/report_invoice.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="258" column="41" lean-forward="true" selection-start-line="258" selection-start-column="41" selection-end-line="258" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
