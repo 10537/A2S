@@ -12,9 +12,9 @@ class AccountInvoice(models.Model):
     @api.one
     @api.depends('payment_move_line_ids.amount_residual')
     def _get_payment_info_report(self):
+        lst_payment = []
         if self.payment_move_line_ids:
             info = {'title': _('Less Payment'), 'outstanding': False, 'content': []}
-            lst_payment = []
             currency_id = self.currency_id
             for payment in self.payment_move_line_ids:
                 payment_currency_id = False
