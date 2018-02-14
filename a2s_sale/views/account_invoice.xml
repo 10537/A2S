@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="view_invoice_a2_extend_form">
+        <field name="name">view.invoice.a2.extend.form</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Add show_name field in Sale order line tree view-->
+            <xpath expr="//field[@name='invoice_line_ids']/tree//field[@name='product_id']" position="before">
+                <field name="quick_payment" />
+                <field name="service_date" required="1"/>
+                <field name="employee_id" domain="[('job_id', '=', %(a2s_sale.job_courier)d)]" required="1"/>
+            </xpath>
+
+            <xpath expr="//field[@name='invoice_line_ids']/tree//field[@name='discount']" position="after">
+                <field name="money_withheld"/>
+                <field name="money_release"/>
+                <field name="money_owner"/>
+                <field name="client_earnings"/>
+                <field name="courier_earnings"/>
+                <field name="own_earnings"/>
+                <field name="line_state"/>
+            </xpath>
+
+
+            <xpath expr="//field[@name='invoice_line_ids']" position="attributes">
+                <attribute name="context">{'default_money_owner': partner_id}</attribute>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

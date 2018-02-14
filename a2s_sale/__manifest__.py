@@ -22,12 +22,13 @@ for a product payment)
  
 """,
     'website': 'https://www.pinkdolphin.com.co',
-    'depends': ['sale', 'hr', 'product'],
+    'depends': ['sale', 'hr', 'product', 'account'],
     'data': [
         'views/hr.xml',
         'views/product.xml',
         'views/partner.xml',
         'views/sale_order.xml',
+        'views/account_invoice.xml',
         'views/report_invoice.xml',
     ],
     'installable': True,

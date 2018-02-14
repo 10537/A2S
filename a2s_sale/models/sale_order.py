@@ -64,13 +64,13 @@ class SaleOrderLine(models.Model):
         new_fields = {
             'quick_payment': self.quick_payment,
             'service_date': self.service_date,
-            'employee_id': self.employee_id,
+            'employee_id': self.employee_id.id,
             'money_withheld': self.money_withheld,
             'money_release': self.money_release,
-            'money_owner': self.money_owner,
-            'client_earnings': self.client_earnings,
-            'courier_earnings': self.courier_earnings,
-            'own_earnings': self.own_earnings,
+            'money_owner': self.money_owner.id,
             'line_state': self.line_state,
         }
-        return res.update(new_fields)
+        res.update(new_fields)
+        print res
+        print new_fields
+        return res
