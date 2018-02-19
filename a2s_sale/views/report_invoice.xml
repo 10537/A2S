@@ -248,7 +248,7 @@
                             <div class="col-xs-12 pull-left">
                                 <table class="table table-condensed">
                                     <tr class="border-black">
-                                        <td><strong>Payments</strong></td>
+                                        <td><strong>Pagos</strong></td>
                                         <td></td>
                                     </tr>
                                     <tr class="border-black">
@@ -257,7 +257,7 @@
                                         </td>
                                     </tr>
                                     <tr class="border-black">
-                                        <td><strong>Amount due</strong></td>
+                                        <td><strong>Monto Adeudado</strong></td>
                                         <td class="text-right">
                                              <span t-field="o.residual"
                                                    t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
