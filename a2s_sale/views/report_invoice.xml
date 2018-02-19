@@ -122,7 +122,7 @@
                             <strong>Debe a:</strong> Alejandro Alzate Uribe<br/>
                             <strong>CC:</strong> 1017185610<br/>
                             <strong>Banco:</strong> Bancolombia<br/>
-                            <strong>Cuenta de Ahorros #:</strong> 344677810-4<br/>
+                            <strong>Cuenta de Ahorros #:</strong> 344677810-41<br/>
                             </span>
                         </div>
                     </div>
@@ -243,28 +243,30 @@
                     </div>
 
                     <!-- Payments -->
-                    <div class="row">
-                        <div class="col-xs-12 pull-left">
-                            <table class="table table-condensed">
-                                <tr class="border-black">
-                                    <td><strong>Payments</strong></td>
-                                    <td></td>
-                                </tr>
-                                <tr class="border-black">
-                                    <td class="text-justify" colspan="12">
-                                        <t t-esc="o._get_payment_info_report()[0]"/>
-                                    </td>
-                                </tr>
-                                <tr class="border-black">
-                                    <td><strong>Amount due</strong></td>
-                                    <td class="text-right">
-                                         <span t-field="o.residual"
-                                               t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
-                                    </td>
-                                </tr>
-                            </table>
+                    <t t-if="o.payments_widget">
+                        <div class="row">
+                            <div class="col-xs-12 pull-left">
+                                <table class="table table-condensed">
+                                    <tr class="border-black">
+                                        <td><strong>Payments</strong></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="border-black">
+                                        <td class="text-justify" colspan="12">
+                                            <t t-esc="o._get_payment_info_report()[0]"/>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-black">
+                                        <td><strong>Amount due</strong></td>
+                                        <td class="text-right">
+                                             <span t-field="o.residual"
+                                                   t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                    </div>
+                    </t>
 
                     <!-- DO NOT REMOVE THIS TABLE. MANDATORY IN SOME COUNTRIES -->
                     <div class="row" t-if="len(o.tax_line_ids) > 0">
