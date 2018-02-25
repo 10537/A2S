@@ -22,7 +22,7 @@ for a product payment)
  
 """,
     'website': 'https://www.pinkdolphin.com.co',
-    'depends': ['sale', 'hr', 'product', 'account'],
+    'depends': ['sale', 'hr', 'product', 'account', 'base_vat'],
     'data': [
         'views/hr.xml',
         'views/product.xml',

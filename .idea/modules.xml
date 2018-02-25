@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/A2S.iml" filepath="$PROJECT_DIR$/.idea/A2S.iml" />
+      <module fileurl="file://$USER_HOME$/atrivia/.idea/atrivia.iml" filepath="$USER_HOME$/atrivia/.idea/atrivia.iml" />
+      <module fileurl="file://$USER_HOME$/odoo/.idea/odoo.iml" filepath="$USER_HOME$/odoo/.idea/odoo.iml" />
       <module fileurl="file://$USER_HOME$/odoo-10.0e/.idea/odoo-10.0e.iml" filepath="$USER_HOME$/odoo-10.0e/.idea/odoo-10.0e.iml" />
     </modules>
   </component>

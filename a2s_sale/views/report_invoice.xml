@@ -243,7 +243,7 @@
                     </div>
 
                     <!-- Payments -->
-                    <t t-if="o.payments_widget">
+                    <t t-if="o._get_payment_info_report()[0] != ''">
                         <div class="row">
                             <div class="col-xs-12 pull-left">
                                 <table class="table table-condensed">
@@ -253,7 +253,8 @@
                                     </tr>
                                     <tr class="border-black">
                                         <td class="text-justify" colspan="12">
-                                            <t t-esc="o._get_payment_info_report()[0]"/>
+                                            <t
+                                                    t-esc="o._get_payment_info_report()[0]"/>
                                         </td>
                                     </tr>
                                     <tr class="border-black">
@@ -293,7 +294,14 @@
                             </table>
                         </div>
                     </div>
-
+                    <p>
+                        <strong>ESTE DOCUMENTO SE ASIMILA PARA SUS
+                            EFECTOS UNA LETRA DE CAMBIO DE ACUERDO AL
+                            ARTICULO 0774 DEL CÓDIGO DE COMERCIO
+                            GENERA INTERESES MORATORIOS A LA TASA
+                            MÁXIMA LEGAL AUTORIZADA SI ES CANCELADA
+                            DESPUES DE SU VENCIMIENTO</strong>
+                    </p>
                     <p t-if="o.comment">
                         <strong>Comment:</strong>
                         <span t-field="o.comment"/>

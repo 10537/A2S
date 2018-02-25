@@ -50,8 +50,8 @@ class AccountInvoice(models.Model):
 
         paystr = ""
         for element in lst_payment:
-            paystr = paystr + _("%s Payment with ref %s - %s via" \
-                                " %s by %s %s\n" % (element['date'],
+            paystr = paystr + _("%s Pago con ref %s - %s via" \
+                                " %s por %s %s\n" % (element['date'],
                                                     element['ref'],
                                                     element['name'],
                                                     element['journal_name'],
