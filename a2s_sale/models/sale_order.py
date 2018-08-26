@@ -19,6 +19,8 @@ class SaleOrderLine(models.Model):
     client_earnings = fields.Float(string="Client Earnings",
                                    compute='_earnings', store=True)
     courier_earnings = fields.Float(string="Courier Earnings")
+    earnings_to_pay = fields.Float(string="Earnings to pay",
+                                   compute='_earnings_to_pay', store=True)
     own_earnings = fields.Float(string="My Earnings",
                                 compute='_earnings', store=True)
     line_state = fields.Selection(selection=[('liquidated', 'Liquidated'),
@@ -62,6 +64,20 @@ class SaleOrderLine(models.Model):
                     record.client_earnings = money if money > 0.00 else 0.00
             amount = (record.price_subtotal - record.courier_earnings) or 0.00
             record.own_earnings = amount
+
+    @api.multi
+    @api.depends('money_withheld', 'money_release', 'quick_payment',
+                 'discount', 'product_id', 'courier_earnings')
+    def _earnings_to_pay(self):
+        """
+        Update the compute field own_earnings checking if the money have a
+        owner different to the Odoo Company
+
+        :return: Update field own_earnings
+        """
+        for record in self:
+            amount = (record.money_withheld - record.courier_earnings) or 0.00
+            record.earnings_to_pay = amount
 
     @api.multi
     def _prepare_invoice_line(self, qty):

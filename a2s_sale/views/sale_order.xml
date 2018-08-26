@@ -24,7 +24,8 @@
                 <field name="line_state"/>
             </xpath>
 
-            <xpath expr="//field[@name='order_line']/tree//field[@name='discount']" position="attributes">
+            <xpath
+                    expr="//field[@name='order_line']/tree//field[@name='product_uom_qty']" position="attributes">
                 <attribute name="invisible">1</attribute>
             </xpath>
 
@@ -61,6 +62,7 @@
                     <field name="client_earnings" sum="Total" widget="monetary" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
                     <field name="courier_earnings" sum="Total" widget="monetary" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
                     <field name="own_earnings" sum="Total" widget="monetary" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <field name="earnings_to_pay" sum="Total" widget="monetary" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
                     <field name="price_subtotal" sum="Total" widget="monetary" readonly="1" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
                     <field name="line_state" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
                     <field name="invoice_status" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
