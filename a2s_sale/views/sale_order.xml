@@ -17,11 +17,19 @@
             <xpath expr="//field[@name='order_line']/tree//field[@name='discount']" position="after">
                 <field name="money_withheld"/>
                 <field name="money_release"/>
-                <field name="money_owner"/>
+                <field name="money_owner" invisible="1"/>
                 <field name="client_earnings"/>
-                <field name="courier_earnings"/>
+                <field name="courier_earnings" readonly="0"/>
                 <field name="own_earnings"/>
                 <field name="line_state"/>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']/tree//field[@name='discount']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']/tree" position="attributes">
+                <attribute name="editable">top</attribute>
             </xpath>
 
 
@@ -41,7 +49,7 @@
                     <field name="quick_payment" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
                     <field name="service_date" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}" />
                     <field name="employee_id" domain="[('job_id', '=', %(a2s_sale.job_courier)d)]" required="1" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
-                    <field name="order_id" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
+                    <!-- <field name="order_id" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/> -->
                     <field name="order_partner_id" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
                     <field name="product_id" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>
                     <field name="name" attrs="{'readonly': [('state', 'in', ['sale', 'done'])]}"/>

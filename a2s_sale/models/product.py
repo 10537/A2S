@@ -9,3 +9,4 @@ class ProductTemplate(models.Model):
 
     external_earnings = fields.Float(string="External earnings")
     internal_earnings = fields.Float(string="Internal earnings")
+    manual_earnings = fields.Boolean(string="Set manual earnings")

@@ -20,6 +20,12 @@
                                 <div name="internal_earnings" groups="base.group_user">
                                     <field name="internal_earnings" widget='monetary' options="{'currency_field': 'currency_id'}" class="oe_inline"/>
                                 </div>
+                            <label for="manual_earnings"
+                                   string="Manual Cost"/>
+                                <div name="manual_earnings"
+                                     groups="base.group_user">
+                                    <field name="manual_earnings" class="oe_inline"/>
+                                </div>
                         </group>
                     </group>
                 </page>
