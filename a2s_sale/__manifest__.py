@@ -30,6 +30,7 @@ for a product payment)
         'views/sale_order.xml',
         'views/account_invoice.xml',
         'views/report_invoice.xml',
+        'views/sale_config_settings_views.xml',
     ],
     'installable': True,
     'auto_install': False,

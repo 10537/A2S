@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 from datetime import datetime
-from odoo import api, fields, models
+from odoo import api, fields, models, exceptions, _
 
 
 class SaleOrderLine(models.Model):
@@ -76,6 +76,28 @@ class SaleOrderLine(models.Model):
             'line_state': self.line_state,
         }
         res.update(new_fields)
-        print res
-        print new_fields
         return res
+
+    @api.model
+    def create(self, values):
+        if values['quick_payment']:
+            journal = self.env['ir.values'].get_default(
+                'sale.config.settings', 'journal_quick_payment')
+
+            if not journal:
+                raise exceptions.ValidationError(
+                    _("You don't have a Quickpayment Journal in sale "
+                      "settings"))
+
+            self.env['account.payment'].create({
+                'partner_id': values['money_owner'],
+                'amount': values['price_unit'] * values['product_uom_qty'],
+                'payment_type': 'inbound',
+                'partner_type': 'customer',
+                'journal_id': journal,
+                'payment_date': fields.Date.today(),
+                'payment_method_id':
+                self.env.ref('account.account_payment_method_manual_in').id,
+            }).post()
+
+        return super(SaleOrderLine, self).create(values)
